@@ -36,6 +36,9 @@
   <% if (theme.scrollLoading){ %>
     <%- css('scrollLoading/style') %>
   <% } %>
+  <% if (config.custom_css){ %>
+    <%- css(config.custom_css) %>
+  <% } %>
   <%- partial('google-analytics') %>
 
   <% if (theme.logo){ %>
